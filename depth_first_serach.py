@@ -28,3 +28,5 @@ depthFirstTraversal(graph, 'a') #acebdf #abdfce
 print("\n")
 print("Depth First Traversal Recursion: ",)
 depthFirstTraversalRec(graph,'a')
+
+#Time complexity: O(V+E)

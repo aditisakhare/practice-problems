@@ -25,3 +25,5 @@ print("Graph - Adjacency List: ",graph)
 print("Breadth First Traversal: ")
 breadthFirstTraversal(graph, 'a') #acebdf #abdfce
 print("\n")
+
+#Time complexity: O(V+E)
