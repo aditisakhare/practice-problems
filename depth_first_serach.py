@@ -8,7 +8,11 @@ def depthFirstTraversal(graph, current):
         for neighbor in graph[current]:
             stack.append(neighbor)
             
-            
+def depthFirstTraversalRec(graph, current):
+    print(current, end = " ")
+    for neighbor in graph[current]:
+        depthFirstTraversalRec(graph, neighbor)
+                
 
 graph = {
     'a': ['b','c'],
@@ -19,4 +23,8 @@ graph = {
     'f': []
 }
 print("Graph - Adjacency List: ",graph)
-depthFirstTraversal(graph, 'a')
+print("Depth First Traversal: ")
+depthFirstTraversal(graph, 'a') #acebdf #abdfce
+print("\n")
+print("Depth First Traversal Recursion: ",)
+depthFirstTraversalRec(graph,'a')
